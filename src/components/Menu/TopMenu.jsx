@@ -33,8 +33,8 @@ export default function TopMenu() {
     <div className={styles.conteiner}>
       <Box sx={{ display: "flex", alignItems: "center", width: '96%', margin: 'auto', minWidth: '1300px' }}>
         <Grid container spacing={0} sx={{ justifyContent: "space-between" }}>
-          <Grid item xs={3}>
-            <Button sx={{ paddingRight: 5 }}>
+          <Grid item xs={3} sx={{ display: 'flex', alignItems: 'center' }}>
+            <Button sx={{ paddingRight: 5}}>
               <img alt="#" src="/img/Logo.svg" />
             </Button>
           </Grid>

@@ -7,7 +7,7 @@ import styles from './Page.module.scss';
 import SubMenu from './SubMenu';
 import UserInfo from './UserInfo';
 import Status from './Status';
-import { TableWrapper } from '../TableWrapper';
+import Table from './Table';
 
 
 const classes = {
@@ -24,26 +24,7 @@ const Item = styled(Paper)(({ theme }) => ({
   color: theme.palette.text.secondary,
 }));
 
-const headData = [
-  {
-    name: 'Сезон',
-  },
-  {
-    name: 'Кол-во игр',
-  },
-  {
-    name: 'Гол',
-  },
-  {
-    name: 'Пас',
-  },
-  {
-    name: 'Гол + пас',
-  },
-  {
-    name: 'Рейтинг',
-  },
-]
+
 
 export default function Page() {
   return (
@@ -59,9 +40,7 @@ export default function Page() {
           <Item sx={classes.itemClasses}> 
             <Status/>
           </Item>
-          <TableWrapper 
-            headData={headData}
-          />
+          <Table />
         </Grid>
         
       </Grid>
